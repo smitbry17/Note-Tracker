@@ -16,7 +16,7 @@ app.get("/notes", (req, res) => {
 
 // All other routes respond with the index.html file
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "../public/index.html"));
+  res.sendFile(path.join(__dirname, "../Note-Tracker/public/index.html"));
 });
 
 app.listen(PORT, () => {
